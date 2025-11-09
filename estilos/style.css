@@ -1,16 +1,51 @@
 /* 
   Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
+  */
+:root {
+  --fundo-principal: f5f5f5;
+  --texto: #222222;
+  --texto-inverso: #ffffff;
+  --destaque: #007BFF;
+  --destaque-inverso: #88a8c9;
+  --fundo-card: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
     background-color: var(--fundo-principal);
     color: var(--texto);
+}
+header {
+    background-color: var(--destaque);
+    color: var(--texto);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center
+}
+nav#menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+nav#menu ul li a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav#menu ul li a:hover {
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
 }
