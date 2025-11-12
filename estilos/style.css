@@ -2,7 +2,7 @@
   Variáveis para cores:
   */
 :root {
-  --fundo-principal: f5f5f5;
+  --fundo-principal: #f5f5f5;
   --texto: #222222;
   --texto-inverso: #ffffff;
   --destaque: #007BFF;
@@ -131,7 +131,7 @@ article h2 {
 
 #skill-container {
     display: grid;
-    grid-template-columns:ifr;
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 #skill-container .info {
