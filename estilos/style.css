@@ -29,7 +29,10 @@ header {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    align-content: center
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 nav#menu ul {
     list-style-type: none;
